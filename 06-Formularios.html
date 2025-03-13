@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 | Formulários</title>
+</head>
+<body>
+    <h1>Trabalhando com Formulários</h1>
+    <form method="get"> <!-- Inicio do Formulário -->
+        
+        <label>Nome</label> <!-- Rótulo do Campo -->
+        <!-- Campo de Texto -->
+        <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" /> 
+
+        <br /> <!-- Quebra de Linha -->
+
+        <label>E-mail</label>
+        <!-- Campo de E-mail -->
+         <input type="email" name="email" id="email" placeholder="Digite seu E-mail" />
+
+        <br /> <!-- Quebra de Linha -->
+
+        <label>Idade</label>
+        <!-- Campo Numérico -->
+        <input type="number" name="idade" id="idade" placeholder="Digite seu Idade" />
+
+         <br /> <!-- Quebra de Linha -->
+
+        <label>Data Nascimento</label>
+        <!-- Campo Tipo Data -->
+        <input type="date" name="dataNascimento" id="dataNascimento" placeholder="Digite a Data de Nascimento" />
+
+        <br /> <!-- Quebra de Linha -->
+
+        <label>Data Cadastro</label>
+        <!-- Campo Tipo Data/Hota -->
+        <input type="datetime-local" name="dataCadastro" id="dataCadastro" placeholder="Digite a Data de Cadastro" />
+
+        <br /> <!-- Quebra de Linha -->
+        <label>Upload de Arquivo</label>
+        <!-- Campo Tipo File -->
+        <input type="file" name="upload" id="upload" placeholder="Nome do Arquivo" />
+
+        <br /> <!-- Quebra de Linha -->
+        <label>Senha</label>
+        <!-- Campo para Senhas -->
+        <input type="password" name="senha" id="senha" placeholder="Digite sua Senha" />
+        
+        <br /> <!-- Quebra de Linha -->
+        <label>Sexo</label>
+        <!-- Campo para Seleção Unica -->
+        <input type="radio" name="sexo" id="sexoM" value="M" placeholder="." />Masculino
+        <input type="radio" name="sexo" id="sexoF" value="F" placeholder="." />Feminino
+        
+        <br /> <!-- Quebra de Linha -->
+        <label>Idiomas</label>
+        <!-- Campo para Seleção Multipla -->
+        <input type="checkbox" name="idioma" id="idioma1" value="I" placeholder="." />Ingles
+        <input type="checkbox" name="idioma" id="idioma2" value="E" placeholder="." />Espanhol
+        <input type="checkbox" name="idioma" id="idioma3" value="P" placeholder="." />Portugues
+
+        <br /> <!-- Quebra de Linha -->
+        <label>Selecione um Cor</label>
+        <input type="color" name="cor" id="cor" placeholder="Selecione uma Cor" />
+
+        <br /> <!-- Quebra de Linha -->
+        <label>Campo Oculto</label>
+        <input type="hidden" name="oculto" id="oculto" placeholder="" value="Este valor não aparece no HTML" />
+
+        <br /> <!-- Quebra de Linha -->
+        <label>Estado</label>
+        <!-- Campo para Seleção de Lista -->
+        <select name="estado" id="estado" title="Selecione um Estado">
+            <option value="">Selecione um Estado...</option>
+            <option value="SP">São Paulo</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </select>
+
+        <br /> <!-- Quebra de Linha -->
+        <label>Mensagem</label>
+        <!-- Campo para Texto Longo -->
+        <textarea name="mensagem" id="mensagem" cols="30" rows="3" placeholder="Digite sua Mensagem"></textarea>
+        
+        <br /> <!-- Quebra de Linha -->
+        <!-- Botão de Envio -->
+        <input type="submit" value="Enviar" /> 
+        <br /> <!-- Quebra de Linha -->
+        <!-- Botão Reset para limpar o formulário -->
+        <input type="reset" value="Limpar" />
+
+    </form> <!-- Fim do Formulário -->
+</body>
+</html>
